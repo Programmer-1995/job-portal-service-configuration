@@ -62,6 +62,7 @@ resilience4j:
     instances:
       companyRetry:
          max-attempts: 5
+         wait-duration: 2s
   circuitbreaker:
     instances:
       companyBreaker:
