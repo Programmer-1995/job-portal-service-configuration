@@ -56,6 +56,12 @@ eureka:
     register-with-eureka: true
 
 resilience4j:
+  ratelimiter:
+    instances:
+      companyBreaker:
+        timeout-duration: 0
+        limit-refresh-period: 4
+        limit-for-period: 2
   retry:
     instances:
       companyRetry:
