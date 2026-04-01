@@ -57,6 +57,10 @@ eureka:
     register-with-eureka: true
 
 resilience4j:
+  retry:
+    instances:
+      companyRetry:
+         max-attempts: 5
   circuitbreaker:
     instances:
       companyBreaker:
