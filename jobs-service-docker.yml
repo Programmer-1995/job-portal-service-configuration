@@ -2,9 +2,9 @@ spring:
   config:
     import: "optional:configserver:http://configserver:8888"
   datasource:   
-    url: jdbc:postgresql://${POSTGRESQL_HOST:postgresql}:${POSTGRESQL_PORT:5432}/${POSTGRESQL_DB:jobs_service_db}
-    username: ${POSTGRESQL_USERNAME:job_user}
-    password: ${POSTGRESQL_PASSWORD:Pali$8619216837}
+    url: jdbc:postgresql://postgresql:5432/jobs_service_db
+    username: job_user
+    password: Pali$8619216837
   jpa:
     properties:
       hibernate:
