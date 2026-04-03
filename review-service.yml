@@ -48,3 +48,17 @@ eureka:
       defaultZone: "http://localhost:8761/eureka"
     fetch-registry: true
     register-with-eureka: true
+
+jobs:
+  service:
+    url: http://localhost:8082
+
+companies:
+  service:
+    url: http://localhost:8081
+
+reviews:
+  service:
+    url: http://localhost:8083
+  
+    
