@@ -23,9 +23,12 @@ spring:
         ddl-auto: update
 
 management:
+  zipkin:
     tracing:
-      sampling:
-        probability: 1.0
+      endpoint: http://zipkin:9411/api/v2/spans
+  tracing:
+    sampling:
+      probability: 1.0
     endpoints:
       web:
         exposure:
