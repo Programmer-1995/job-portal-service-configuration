@@ -53,3 +53,18 @@ eureka:
       defaultZone: "http://eureka-service:8761/eureka"
     fetch-registry: true
     register-with-eureka: true
+
+
+jobs:
+  service:
+    url: http://jobs-service:8082
+
+companies:
+  service:
+    url: http://companies-service:8081
+
+reviews:
+  service:
+    url: http://reviews-service:8083
+
+    
