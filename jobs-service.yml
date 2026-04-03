@@ -81,4 +81,15 @@ resilience4j:
         automatic-transition-from-open-to-half-open-enabled: true
         sliding-window-type: count_based
 
+jobs:
+  service:
+    url: http://localhost:8082
+
+companies:
+  service:
+    url: http://localhost:8081
+
+reviews:
+  service:
+    url: http://localhost:8083
     
