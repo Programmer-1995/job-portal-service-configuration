@@ -19,12 +19,15 @@ spring:
     database: POSTGRESQL
 
 management:
-  health:
-    circuitbreakers:
-      enabled: true
+  zipkin:
+    tracing:
+      endpoint: http://zipkin:9411/api/v2/spans
   tracing:
     sampling:
       probability: 1.0
+  health:
+    circuitbreakers:
+      enabled: true
   endpoints:
     web:
       exposure:
