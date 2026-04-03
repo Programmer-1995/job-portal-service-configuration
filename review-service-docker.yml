@@ -7,9 +7,9 @@ spring:
     username: admin
     password: Pali$8619216837
   datasource:
-    url: jdbc:postgresql://${POSTGRESQL_HOST:postgresql}:${POSTGRESQL_PORT:5432}/${POSTGRESQL_DB:review_service_db}
-    username: ${POSTGRESQL_USERNAME:job_user}
-    password: ${POSTGRESQL_PASSWORD:Pali$8619216837}
+    url: jdbc:postgresql://postgresql:5432/review_service_db
+    username: job_user
+    password: Pali$8619216837
   jpa:
       properties:
         hibernate:
