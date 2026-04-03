@@ -1,4 +1,6 @@
 spring:  
+  config:
+    import: "optional:configserver:http://configserver:8888"
   datasource:   
     url: jdbc:postgresql://${POSTGRESQL_HOST:postgresql}:${POSTGRESQL_PORT:5432}/${POSTGRESQL_DB:jobs_service_db}
     username: ${POSTGRESQL_USERNAME:job_user}
