@@ -1,4 +1,11 @@
 spring:      
+  cloud:
+    config:
+      fail-fast: true
+      retry:
+        initial-interval: 2000
+        max-attempts: 10
+        multiplier: 1.5
   datasource:   
     url: jdbc:postgresql://postgresql:5432/jobs_service_db
     username: job_user
