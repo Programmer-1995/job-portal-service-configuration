@@ -1,6 +1,4 @@
-spring:  
-  config:
-    import: "optional:configserver:http://configserver:8888"
+spring:      
   datasource:   
     url: jdbc:postgresql://postgresql:5432/jobs_service_db
     username: job_user
